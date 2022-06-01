@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Formulario</title>
+    
 </head>
 <body>
     <main class="login">
@@ -15,14 +17,13 @@
 
             <form class="login-form">
 
-                <input class="login-input" type="email" placeholder="e-mail">
+                <input class="login-input" id="email" type="email" placeholder="e-mail">
                 <span class="login-input-border"></span>
                 
-
-                <input class="login-input" type="password" placeholder="senha">
+                <input class="login-input" id="senha" type="password" placeholder="senha">
                 <span class="login-input-border"></span>
                 <br>
-                <button class="login-submit">login</button>
+                <button class="login-submit" id="login">login</button>
                 <br>
                 <a class="login-reset" href="#">Esqueceu a senha?</a>
 
