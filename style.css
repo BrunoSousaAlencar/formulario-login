@@ -2,7 +2,7 @@
     --input-liner:linear-gradient(120deg, #e75590, #00c2cb);
     --login-submit:linear-gradient(120deg, #e75590, #00c2cb, #e75590);
     --input-error: #ff0000;
-    --input-success: rgb(18, 151, 107);
+    --input-success: #12976b;
     --button-disabled: #acacac;
 }
 body{
