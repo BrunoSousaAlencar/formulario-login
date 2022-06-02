@@ -1,6 +1,9 @@
 :root {
     --input-liner:linear-gradient(120deg, #e75590, #00c2cb);
     --login-submit:linear-gradient(120deg, #e75590, #00c2cb, #e75590);
+    --input-error: #ff0000;
+    --input-success: rgb(18, 151, 107);
+    --button-disabled: #acacac;
 }
 body{
     margin: 0;
@@ -50,7 +53,7 @@ body{
     outline: none;
 }
 
-.login-sunmit {
+.login-submit {
     height: 1px;
     width: 100%;
     margin-bottom: 16px;
@@ -69,7 +72,14 @@ body{
 
 .login-input:focus + .login-input-border::after {
     width: 100%;
+}
 
+.login-input-border.error {
+    background-color: var(--input-error);
+}
+
+.login-input-border.error:after{
+    background-color: var(--input-error);
 }
 
 .login-submit{
@@ -88,8 +98,22 @@ body{
     transition: .5s ease-in-out;
 }
 
+.login-submit:disabled{
+    background-color: var(--button-disabled);
+    cursor: not-allowed;
+
+}
+
 .login-submit:hover{
     background-position: right;
+}
+
+.login-submit:error{
+    background-color: var(--input-error);
+}
+
+.login-submit:success{
+    background-color: var(--input-success);
 }
 
 .login-reset{
